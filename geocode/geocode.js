@@ -1,7 +1,7 @@
 const request = require('request');
 
 var geocodeAddress = (address, callback) => {
-  let encodedAddress = encodeURIComponent(address)
+  let encodedAddress = encodeURIComponent(address);
   request({
     url: `http://www.mapquestapi.com/geocoding/v1/address?key=TPzpWubEV7Qc9A9M8R4Fakw98qekQQA0&location=${encodedAddress}`,
     json: true
